@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Equipe especializada, atendimento humanizado com excelência e cuidado com o bem-estar animal.">
+    <meta name="author" content="Adyson Alves">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <title>Cardeal Pet - Aqui o seu Pet é tratado com muito amor!</title>
+    <script src="https://kit.fontawesome.com/d4268a8639.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="topo">
+        <div class="container">
+            <div class="logo">
+                <a href="/"><img src="./assets/imagens/logo.png" alt="Logo CardealPet"></a>
+            </div>
+
+            <nav class="header">
+                <a href="#home">Home</a>
+                <a href="#about">Sobre</a>
+                <a href="#services">Serviços</a>
+                <a href="#contact">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <div id="home"></div>
+    <div class="main">
+        <div class="container">
+            <div class="info-wrapper">
+                <h2>Aqui seu amiguinho é tratado com muito carinho!</h2>
+
+                <p>Equipe especializada, atendimento humanizado com excelência e cuidado com o bem-estar animal.</p>
+
+                <a href="/pre-agendamento">
+                    <button><i class="fa-solid fa-calendar-check"></i> Pré-agendamento</button>
+                </a>
+            </div>
+
+            <div class="banner-wrapper">
+                <img src="./assets/imagens/pets.png" alt="">
+            </div>
+        </div>
+
+        <a href="#about"><i class="fa-solid fa-circle-arrow-down arrow-next"></i></a>
+    </div>
+
+    <div class="about" id="about">
+        <div class="container">
+            <div class="video-about">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/pUsFCFit5yY"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen=""></iframe>
+            </div>
+
+            <div class="info-about">
+                <h2>Quem somos?</h2>
+                <p>Somos um clínica veterinária com foco principal em urgência e emergência. Alinhamos os melhores
+                    profissionais e estrutura com intuito de oferecer o melhor atendimento aos animais. Atualmente nossa
+                    clínica é localizada no bairro de Areias, com projeto de expansão para toda a Região Metropolitana,
+                    afim
+                    de salvar e tornar a vida dos nossos bichinhos a melhor possível. Essa é a nossa missão.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="services" class="services">
+        <div class="modal">
+            <div class="container">
+                <h3></h3>
+                <hr>
+                <span></span>
+                <button>Fechar [X]</button>
+            </div>
+        </div>
+        <div class="titles-services">
+            <h2>Nossos serviços</h2>
+            <span>Confira alguns dos nossos serviços</span>
+            <hr>
+        </div>
+
+        <div class="container box-modal">
+            <div class="cards-services">
+                <div class="card">
+                    <i class="fa-solid fa-hospital icon-box"></i>
+                    <h3>Urgência 24H</h3>
+                </div>
+
+                <div class="card">
+                    <i class="fa-solid fa-stethoscope icon-box"></i>
+                    <h3>Atendimento Clínico</h3>
+                </div>
+
+                <div class="card">
+                    <i class="fa-solid fa-syringe icon-box"></i>
+                    <h3>Vacinação</h3>
+                </div>
+
+                <div class="card">
+                    <i class="fa-solid fa-truck-medical icon-box"></i>
+                    <h3>Cirurgias</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="contact">
+        <div class="container">
+            <div class="form-contact">
+                <h2>Duvidas? Fale conosco</h2>
+                <div class="msg">
+                    Sua mensagem foi enviada com sucesso! <br> Em breve entraremos em contato com você.
+                </div>
+
+                <form action="/contato" method="post" class="form-contato">
+
+                    <div class="row">
+                        <label for="nome">Seu nome:</label>
+                        <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+                    </div>
+
+                    <div class="row">
+                        <label for="whatsapp">Seu WhatsApp:</label>
+                        <input type="text" name="telefone" id="whatsapp" placeholder="Seu numero com o DDD" required>
+                    </div>
+
+                    <div class="row">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea name="mensagem" id="mensagem" cols="30" rows="10" maxlength="500"
+                            placeholder="Escreva aqui a sua mensagem..." required></textarea>
+
+                        <div class="count">
+                            Caracteres:
+                            <p class="count-letter">0</p>
+                        </div>
+                    </div>
+
+                    <button type="button" onclick="enviarBD()">Enviar</button>
+                </form>
+
+                <span>Não se preocupe, não te enviaremos span.</span>
+            </div>
+
+            <div class="location">
+                <h2>Onde nos encontrar</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.02032581311!2d-34.9356260857115!3d-8.099408983252777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1e8ddca27479%3A0x84db6856bf096798!2sCardeal%20Pet!5e0!3m2!1spt-BR!2sbr!4v1653956898443!5m2!1spt-BR!2sbr"
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <span><i class="fa-solid fa-location-dot"></i> Endereço</span>
+                <p>Rua Aurora Caçote, 632 - Areias, Recife - PE, 50870-490</p>
+
+                <br>
+
+                <span><i class="fa-solid fa-phone"></i>Telefone</span>
+                <p>(00) 00000-0000</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="rodape">
+        <span>CARDEAL PET ©2022 - TODOS OS DIREITOS RESERVADOS.</span>
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

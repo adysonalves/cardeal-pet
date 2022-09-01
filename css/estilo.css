@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap');
+
+:root {
+    --cor-principal: #2ECC71;
+    --cor-secundaria: #E3772F;
+    --cor-hover: #1F9852;
+    --cor-textos: #5B5B5B;
+    --fonte-principal: 'Nunito Sans', sans-serif;
+    --margin-padrao-titulos: 25px;
+    --font-size-titulos: 2.5rem;
+}
+
+
+html {
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1rem;
+    color: var(--cor-textos);
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 15px;
+    /* border: 1px solid red; */
+}
+
+/* BARRA DO TOPO */
+
+header.topo {
+    width: 100%;
+    height: 4.64rem;
+    background-color: var(--cor-principal);
+    position: sticky;
+    top: 0;
+    z-index: 99999;
+}
+
+header.topo .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header.topo .container .logo {
+    width: 200px;
+    height: 100%;
+}
+
+header.topo .container .logo img {
+    width: 85px;
+}
+
+nav.header a,
+a:visited,
+a:active {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+nav.header a:hover {
+    color: var(--cor-hover);
+}
+
+/* FIM DO TOPO */
+
+/* INICIO HOMEPAGE MAIN */
+
+div.main {
+    width: 100%;
+    height: calc(100vh - 65px);
+    position: relative;
+}
+
+div.main .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.arrow-next {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 2rem;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    color: #c3c3c3;
+}
+
+.info-wrapper {
+    width: 50%;
+    padding-right: 6.5rem;
+}
+
+.info-wrapper h2 {
+    color: var(--cor-principal);
+    font-size: 2.5rem;
+    line-height: 2.8rem;
+    margin-bottom: 25px;
+}
+
+.info-wrapper p {
+    color: var(--cor-textos);
+    font-size: 1.4rem;
+    margin-bottom: 45px;
+}
+
+.info-wrapper button i {
+    color: #000;
+}
+
+.info-wrapper button {
+    background-color: var(--cor-principal);
+    padding: 10px;
+    color: #fff;
+    transition: 0.8s;
+}
+
+.info-wrapper button:hover {
+    cursor: pointer;
+    background-color: var(--cor-hover);
+    transform: scale(1.1);
+}
+
+.banner-wrapper {
+    width: 50%;
+}
+
+.banner-wrapper img {
+    width: 100%;
+}
+
+/* FIM HOMEPAGE MAIN */
+
+/* INICIO ABOUT */
+
+div.about {
+    width: 100%;
+    height: auto;
+    padding: 12rem 0;
+    background: var(--cor-secundaria);
+    color: #fff;
+}
+
+div.about .container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.info-about {
+    width: 50%;
+    padding-left: 8rem;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+}
+
+.info-about p {
+    font-size: 1.4rem;
+    text-align: justify;
+    line-height: 2rem;
+}
+
+.video-about {
+    width: 50%;
+    height: 350px;
+    border-radius: 10px;
+    background-image: url(/assets/imagens/video-loading.png);
+    background-color: #e6e6e6;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-box-shadow: 15px 20px 15px 0px #0000002b;
+    box-shadow: 15px 20px 15px 0px #0000002b;
+}
+
+.video-about iframe {
+    border-radius: 10px;
+}
+
+/* FIM DO ABOUT */
+
+/* INICIO DO SERVICES */
+
+div.services {
+    width: 100%;
+    position: relative;
+    padding: 130px 0;
+}
+
+div.titles-services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 65px;
+}
+
+div.titles-services h2 {
+    color: var(--cor-principal);
+    font-size: var(--font-size-titulos);
+}
+
+div.titles-services span {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+div.titles-services hr {
+    width: 12%;
+    margin-top: 15px;
+    border: solid 1px #e7e7e7;
+}
+
+div.services .container {
+    margin-top: var(--margin-padrao-titulos);
+    padding-bottom: 65px;
+}
+
+div.cards-services {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+div.cards-services .card {
+    width: 22%;
+    background-color: var(--cor-principal);
+    border-radius: 25px;
+    height: 200px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.8s;
+}
+
+div.cards-services .card i {
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 3.3rem;
+    margin-bottom: 10px;
+}
+
+div.cards-services .card h3 {
+    font-size: 1.2rem;
+}
+
+/* MODAL  */
+
+div.modal {
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: none;
+    top: 0;
+    background-color: #000000b8;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.8s;
+}
+
+div.modal .container {
+    background-color: var(--cor-principal);
+    width: 30%;
+    min-height: 250px;
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+
+div.modal .container h3 {
+    font-size: 1.5rem;
+}
+
+div.modal .container hr {
+    border: 1px solid rgb(255 255 255 / 19%);
+    margin: 15px 0;
+    width: 100%;
+}
+
+div.modal .container span {
+    font-size: 1.2rem;
+    margin-bottom: 65px;
+}
+
+div.modal .container button {
+    width: 20%;
+    padding: 5px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    position: absolute;
+    bottom: 14px;
+}
+
+/* FIM DO MODAL */
+
+/* INICIO CONTACT */
+
+div.contact {
+    width: 100%;
+    padding: 8rem 0;
+    background-color: var(--cor-hover);
+    color: #fff;
+}
+
+div.contact .container {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+}
+
+div.contact .container span {
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin-top: 15px;
+    font-size: 0.8rem;
+}
+
+div.contact .container .form-contact {
+    width: 45%;
+}
+
+div.contact .container .form-contact h2 {
+    font-size: var(--font-size-titulos);
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+div.contact .container .form-contact .msg {
+    width: 80%;
+    height: 48px;
+    margin: 0 auto;
+    display: none;
+    padding: 5px 18px 5px 5px;
+    background-color: var(--cor-principal);
+    margin-bottom: 10px;
+    position: relative;
+    opacity: 1;
+    transition: opacity 400ms ease-out;
+}
+
+div.contact .container .form-contact .msg button {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+}
+
+div.contact .container .form-contact form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.contact .container .form-contact form .row {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+div.contact .container .form-contact form label {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+div.contact .container .form-contact form input,
+textarea {
+    margin-top: 5px;
+    padding: 8px;
+    border: 0;
+    border-radius: 10px;
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+    border: 2px solid #069341;
+}
+
+div.contact .container .form-contact form .row textarea{
+    position: relative;
+    resize: none;
+}
+
+div.contact .container .form-contact form .row .count {
+    position: absolute;
+    color: grey;
+    font-weight: bold;
+    display: flex;
+    bottom: 2px;
+    width: 95%;
+    font-size: 0.8rem;
+    background: white;
+    left: 2px;
+    padding: 10px;
+    border-radius: 0 0 0 6px;
+}
+
+div.contact .container .form-contact form .row .count .count-letter{
+    margin-left: 5px;
+}
+
+div.contact .container .form-contact form button {
+    width: 80%;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: var(--cor-secundaria);
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+
+div.contact .container .location {
+    width: 45%;
+    text-align: center;
+}
+
+div.contact .container .location h2 {
+    font-size: var(--font-size-titulos);
+    margin-bottom: 25px;
+}
+
+div.contact .container .location iframe {
+    margin-bottom: 25px;
+}
+
+div.contact .container .location span {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+div.contact .container .location p {
+    margin-top: 5px;
+}
+
+
+
+
+/* RODAPÉ */
+footer {
+    width: 100%;
+    height: 4rem;
+    background-color: var(--cor-principal);
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    line-height: 4rem;
+    font-size: 0.8rem;
+}
